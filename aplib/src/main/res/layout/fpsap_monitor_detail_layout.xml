@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/detail_view"
+    android:orientation="vertical"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    tools:background="#a000">
+
+    <com.xfy.androidperformance.weight.FPSDataView
+        android:id="@+id/data_view"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"/>
+
+    <TextView
+        android:id="@+id/cache_data_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textColor="#fff"
+        android:text="缓存数据: 180"/>
+
+    <SeekBar
+        android:id="@+id/cache_data_seek"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"/>
+
+    <TextView
+        android:id="@+id/refresh_delay_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textColor="#fff"
+        android:text="刷新延迟：16" />
+
+    <SeekBar
+        android:id="@+id/refresh_delay_seek"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"/>
+
+    <TextView
+        android:id="@+id/max_time_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textColor="#fff"
+        android:gravity="center"
+        tools:text="最大耗时60ms"/>
+
+    <TextView
+        android:id="@+id/clear_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textColor="#fff"
+        android:gravity="center"
+        android:text="清除数据"/>
+
+    <TextView
+        android:id="@+id/detail_close"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textColor="#fff"
+        android:gravity="center"
+        android:text="关闭"/>
+</LinearLayout>
