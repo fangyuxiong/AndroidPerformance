@@ -31,6 +31,19 @@ allprojects {
         libVersion="1.0.0"
     }
 }
+subprojects {
+
+    buildscript {
+        repositories {
+            mavenCentral()
+            jcenter()
+        }
+        dependencies {
+            classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.2'
+            classpath 'com.github.dcendents:android-maven-gradle-plugin:2.0'
+        }
+    }
+}
 
 task clean(type: Delete) {
     delete rootProject.buildDir
